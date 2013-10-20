@@ -1,6 +1,7 @@
 
 (defpackage #:weblocks-clsql-demo
   (:use :cl :weblocks :metatilities)
+  (:import-from :weblocks-stores :*default-store* :find-persistent-objects)
   (:documentation
    "A web application based on Weblocks."))
 

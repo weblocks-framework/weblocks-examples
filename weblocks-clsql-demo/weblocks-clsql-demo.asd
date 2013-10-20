@@ -6,11 +6,11 @@
 
 (defsystem weblocks-clsql-demo
     :name "weblocks-clsql-demo"
-    :version "0.1"
+    :version "0.1.1"
     :author "Slava Akhmechet"
     :licence "Public Domain"
     :description "weblocks-clsql-demo"
-    :depends-on (:weblocks :metatilities :clsql)
+    :depends-on (:weblocks :metatilities :weblocks-clsql :weblocks-stores)
     :components ((:file "weblocks-clsql-demo")
                  (:module conf
                   :components ((:file "stores"))
