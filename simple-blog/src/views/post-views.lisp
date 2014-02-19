@@ -29,7 +29,7 @@
                                    (setf (mode w) :full)
                                    (let ((blog (blog-widget w)))
                                      (setf (mode blog) :post))
-                                   (safe-funcall (on-select w) w))))
+                                   (weblocks-util:safe-funcall (on-select w) w))))
   (text :hidep t))
 
 (defview post-full-view (:type data :inherit-from 'post-data-view)

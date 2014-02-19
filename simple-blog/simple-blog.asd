@@ -6,7 +6,7 @@
 
 (defsystem simple-blog
   :name "simple-blog"
-  :version "0.0.4"
+  :version "0.0.5"
   :maintainer ""
   :author ""
   :licence ""
