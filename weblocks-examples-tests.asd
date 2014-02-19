@@ -2,8 +2,8 @@
    :description "Tests for weblocks-examples"
    :author "Olexiy Zamkoviy <olexiy.z@gmail.com>"
    :license "LLGPL"
-   :version "0.0.1"
-   :depends-on (#:weblocks #:simple-blog #:weblocks-selenium-tests)
+   :version "0.1.0"
+   :depends-on (#:weblocks #:simple-blog #:weblocks-clsql-demo #:weblocks-demo #:weblocks-elephant-demo #:weblocks-selenium-tests)
    :components 
    ((:module tests 
      :components

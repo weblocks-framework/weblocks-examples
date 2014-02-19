@@ -24,3 +24,18 @@
     (do-click-and-wait "link=MAIN")
     (do-click-and-wait "css=li.title:nth-child(1) a")
     (do-click-and-wait "link=Simple Blog")))
+
+(deftest opens-clsql-demo ()
+  (with-new-or-existing-selenium-session
+    (do-click-and-wait "link=A web application based on Weblocks using clsql")
+    (do-click-and-wait "link=Next")))
+
+(deftest opens-weblocks-demo ()
+  (with-new-or-existing-selenium-session
+    (do-click-and-wait "link=A web application based on Weblocks")
+    (do-click-and-wait "link=Start Demo")))
+
+(deftest opens-weblocks-elephant-demo ()
+  (with-new-or-existing-selenium-session
+    (do-click-and-wait "link=A web application based on Weblocks using elephant store")
+    (do-click-and-wait "link=Next")))

@@ -6,7 +6,7 @@
 
 (defsystem weblocks-clsql-demo
     :name "weblocks-clsql-demo"
-    :version "0.1.1"
+    :version "0.1.2"
     :author "Slava Akhmechet"
     :licence "Public Domain"
     :description "weblocks-clsql-demo"

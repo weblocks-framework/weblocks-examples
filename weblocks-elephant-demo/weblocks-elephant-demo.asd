@@ -6,7 +6,7 @@
 
 (defsystem weblocks-elephant-demo
     :name "weblocks-elephant-demo"
-    :version "0.1"
+    :version "0.1.1"
     :author "Slava Akhmechet"
     :licence "Public Domain"
     :description "weblocks-elephant-demo"
