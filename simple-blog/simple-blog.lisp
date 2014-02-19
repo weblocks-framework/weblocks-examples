@@ -21,9 +21,13 @@
 
 (defun start-simple-blog (&rest args)
   "Starts the application by calling 'start-weblocks' with appropriate
-arguments."
-  (apply #'start-weblocks args)
-  (start-webapp 'simple-blog))
+   arguments."
+  (let ((blog-args (when (getf args :prefix) 
+                     (prog1 
+                       (list :prefix (getf args :prefix)) 
+                       (remf args :prefix)))))
+    (apply #'start-weblocks args)
+    (apply #'start-webapp (list* 'simple-blog blog-args))))
 
 (defun stop-simple-blog ()
   "Stops the application by calling 'stop-weblocks'."

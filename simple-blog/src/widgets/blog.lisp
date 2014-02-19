@@ -70,6 +70,8 @@
 
 (defmethod render-blog ((blog-widget blog-widget) (mode (eql :blog)))
   (with-html (:h1 "Simple Blog"))
+  ; XXX, this should not be here but it fixes bug with posts displaying after adding one
+  (reset-blog blog-widget)
   (render-widget (posts blog-widget)))
 
 (defmethod render-blog ((blog-widget blog-widget) (mode (eql :post)))
@@ -90,7 +92,7 @@
           (when (eql (mode obj) :blog)
             (htm
              (:img :id "bubblehead"
-                   :src "/pub/images/bubblehead.png"))))))
+                   :src "./pub/images/bubblehead.png"))))))
 
 (defmethod render-widget-body ((obj blog-widget) &key)
   (render-blog obj (mode obj)))
