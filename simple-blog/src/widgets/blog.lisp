@@ -92,7 +92,7 @@
           (when (eql (mode obj) :blog)
             (htm
              (:img :id "bubblehead"
-                   :src "./pub/images/bubblehead.png"))))))
+                   :src (weblocks:make-webapp-uri "/pub/images/bubblehead.png")))))))
 
 (defmethod render-widget-body ((obj blog-widget) &key)
   (render-blog obj (mode obj)))

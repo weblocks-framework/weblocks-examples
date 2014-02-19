@@ -6,8 +6,8 @@
 
 (defsystem simple-blog
   :name "simple-blog"
-  :version "0.0.6"
-  :maintainer ""
+  :version "0.0.7"
+  :maintainer "Olexiy Zamkoviy"
   :author ""
   :licence ""
   :description "simple blog"
