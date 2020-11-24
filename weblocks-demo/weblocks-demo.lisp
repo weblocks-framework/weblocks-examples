@@ -25,6 +25,7 @@
 
 ;; Define our application
 (defwebapp weblocks-demo :prefix "/"
+           :js-backend :prototype
            :autostart nil 
            :public-files-cache-time 100000
            :description "A web application based on Weblocks"

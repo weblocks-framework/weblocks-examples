@@ -6,18 +6,18 @@
 
 (defsystem weblocks-demo
     :name "weblocks-demo"
-    :version "0.1.2"
+    :version "0.1.3"
     :author "Slava Akhmechet"
-    :maintainer "Olexiy Zamkoviy, Scott L. Burson"
+    :maintainer "Alexander Artemenko, Olexiy Zamkoviy"
     :licence "Public Domain"
     :description "weblocks-demo"
-    :depends-on (:weblocks :metatilities)
+    :depends-on (:weblocks :metatilities :weblocks-prototype-js)
     :components ((:file "package")
                  (:module conf
                   :components ((:file "stores"))
                   :depends-on ("package"))
                  (:file "weblocks-demo"
-                  :depends-on ("conf" "package"))
+                  :depends-on ("package"))
                  (:module src
                   :components ((:file "layout"
                                       :depends-on (model))

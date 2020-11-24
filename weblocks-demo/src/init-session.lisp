@@ -1,13 +1,6 @@
 
 (in-package :weblocks-demo)
 
-;; Define our application
-(defwebapp weblocks-demo
-    :description "A web application based on Weblocks"
-    :init-user-session  'init-user-session :public-files-cache-time 100000
-    :dependencies
-    '((:stylesheet "suggest")))
-
 ;; ;; Application dependencies
 ;; (setf *application-public-dependencies*
 ;;       (append (public-files-relative-paths
